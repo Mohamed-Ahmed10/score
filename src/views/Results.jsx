@@ -1,8 +1,13 @@
+import { TeamsContext } from "../context/Teams_context"
+import { useContext } from "react"
+
 export default function Results() {
+    let teams = useContext(TeamsContext)
+    
     return (
-        <div>Home
-            <div className="score_container">
-                <div className="highlight me-4">
+        <div>
+            <div className="score_container justify-content-center">
+                {/* <div className="highlight me-4">
                     <h1>Your Result</h1>
                     <div className="circle">
                         <span className="mb-1">76</span>
@@ -13,25 +18,18 @@ export default function Results() {
                     <p>
                         You scored higher than 65% of the people who have taken these tests.
                     </p>
-                </div>
-                <div className="content p-3">
+                </div> */}
+                <div className="content p-3 mt-4">
                     <h2 className="summary text-center">Summary</h2>
-                    <div className="summary-item fw-bold green">
-                        <p>Team one</p>
-                        <span>92</span>
-                    </div>
-                    <div className="summary-item fw-bold red">
-                        <p>Team two</p>
-                        <span>80</span>
-                    </div>
-                    <div className="summary-item fw-bold orange">
-                        <p>Team three</p>
-                        <span>61</span>
-                    </div>
-                    <div className="summary-item fw-bold cobalt">
-                        <p>Team four</p>
-                        <span>72</span>
-                    </div>
+                    {/* Add green */}
+                    {
+                        teams.teams.map((team, index) =>
+                            <div key={team.id} className={`summary-item fw-bold ${index === 0 ? 'green' : ''}`}>
+                                <p>{team.name}</p>
+                                <span>{team.score}</span>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         </div>

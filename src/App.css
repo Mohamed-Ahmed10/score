@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#262626, #1c1c1ca5), url(./assets/bg1.jpg) center center no-repeat;
+    background: linear-gradient(#262626d9, #1c1c1c7a), url(/src/assets/bg1.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
@@ -67,7 +67,7 @@ p {
 }
 
 .content {
-    background: white;
+    background: #ffffff44;
     display: grid;
     gap: 15px;
     width: 100%;
@@ -135,7 +135,7 @@ p {
 
 @media screen and (min-width: 475px) {
     .score_container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 80%;
         margin: auto;
     }

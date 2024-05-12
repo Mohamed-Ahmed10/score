@@ -3,7 +3,7 @@ import { Button, Badge } from "react-bootstrap";
 import audioPath from '../assets/audios/switch_players.mp3'
 
 export default function Rube() {
-    const [time, setTime] = useState(240); // 4 minutes in seconds
+    const [time, setTime] = useState(5); // 4 minutes in seconds
     const [isRunning, setIsRunning] = useState(false);
 
     useEffect(() => {
