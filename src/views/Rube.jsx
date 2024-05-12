@@ -40,8 +40,9 @@ export default function Rube() {
             <h1 className='text-white'>
                 <Badge bg="secondary">{formatTime()}</Badge>
             </h1>
-            <Button className="mx-3" onClick={handleStart} variant="primary">Start</Button>
+            <Button className="mx-3" onClick={handleStart} variant="primary">{isRunning ? 'Continue' : 'Start'}</Button>
             <Button className="mx-3" onClick={handlePause} variant="info">Pause</Button>
+            <Button className="mx-3" onClick={() => setTime(240)} variant="success">Reset</Button>
             <p className="text-white w-50 m-auto mt-4">The VR Rube Goldberg machine game in the change management course measures adaptability, problem-solving, and collaboration. Participants must adapt to changing conditions, creatively solve problems, and collaborate effectively to construct the machine, reflecting essential competencies for managing organizational change.</p>
         </div>
     )

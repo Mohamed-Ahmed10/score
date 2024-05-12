@@ -4,7 +4,7 @@ import audioPath from '../assets/audios/switch_players.mp3'
 
 export default function Climbing() {
 
-    const [time, setTime] = useState(240); // 4 minutes in seconds
+    const [time, setTime] = useState(5); // 4 minutes in seconds
     const [isRunning, setIsRunning] = useState(false);
 
     useEffect(() => {
@@ -15,6 +15,7 @@ export default function Climbing() {
         } else if (time === 0) {
             const audio = new Audio(audioPath);
             audio.play();
+            setIsRunning(false)
         }
 
         return () => clearTimeout(timer);
@@ -33,6 +34,10 @@ export default function Climbing() {
         const seconds = time % 60;
         return `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     };
+    const reset = () => {
+        setTime(240)
+        setIsRunning(false)
+    }
 
     return (
         <div className="text-center mt-4 pt-4">
@@ -43,6 +48,7 @@ export default function Climbing() {
             </h1>
             <Button className="mx-3" onClick={handleStart} variant="primary">Start</Button>
             <Button className="mx-3" onClick={handlePause} variant="info">Pause</Button>
+            <Button className="mx-3" onClick={reset} variant="success">Reset</Button>
             <p className="text-white w-50 m-auto mt-4"> Within the climbing VR game, change management competencies can be assessed through adaptability to varying challenges, strategic decision-making in utilizing resources efficiently (like energy shakes), time management skills to reach multiple stops within a set timeframe, resilience in facing setbacks or fatigue, and effective communication in coordinating movements (like using both hands). Additionally, problem-solving abilities and teamwork may be evaluated as players strategize and collaborate to overcome obstacles collectively.</p>
         </div>
     )
