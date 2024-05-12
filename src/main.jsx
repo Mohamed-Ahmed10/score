@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TeamsProvider from './context/Teams_data.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <TeamsProvider>
+        <App />
+      </TeamsProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

@@ -149,3 +149,11 @@ p {
 h1 {
     color: #5dd1f1 !important
 }
+
+hr {
+    color: #FFF !important
+}
+
+.score_title {
+    letter-spacing: 2px;
+}

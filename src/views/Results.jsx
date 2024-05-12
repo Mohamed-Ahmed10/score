@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Results() {
     return (
         <div>Home
             <div className="score_container">
