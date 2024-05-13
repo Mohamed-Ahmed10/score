@@ -6,6 +6,7 @@ import Climbing from './views/Climbing'
 import Rube from './views/Rube'
 import Results from './views/Results'
 import Data_entry from './views/Data_entry'
+import Home from './views/Home'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <SiteNav />
 
       <Routes>
+        <Route path="/" Component={Home} />
         <Route path="/results" Component={Results} />
         <Route path="/tennis" Component={Tennis} />
         <Route path="/climbing" Component={Climbing} />

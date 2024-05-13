@@ -6,9 +6,9 @@ export default function SiteNav() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand href="#home">
+                <NavLink className="nav-link" to="/data">
                     <img src={logo} alt="Boost logo" />
-                </Navbar.Brand>
+                </NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto">

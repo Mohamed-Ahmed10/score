@@ -7,7 +7,7 @@ export default function Data_entry() {
     console.log(team)
     return (
         <div>
-            <h3 className='score_title text-center text-white my-3'>Team one</h3>
+            <h3 className='fw-bold score_title text-center text-white my-3'>Team one</h3>
             <Form.Control
                 className="w-50 mx-auto mt-4"
                 type="text"
@@ -21,7 +21,7 @@ export default function Data_entry() {
                 placeholder="Team 1 score"
             />
             <hr />
-            <h3 className='score_title text-center text-white my-3'>Team two</h3>
+            <h3 className='fw-bold score_title text-center text-white my-3'>Team two</h3>
             <Form.Control
                 className="w-50 mx-auto mt-4"
                 type="text"
@@ -35,7 +35,7 @@ export default function Data_entry() {
                 placeholder="Team 2 score"
             />
             <hr />
-            <h3 className='score_title text-center text-white my-3'>Team three</h3>
+            <h3 className='fw-bold score_title text-center text-white my-3'>Team three</h3>
             <Form.Control
                 className="w-50 mx-auto mt-4"
                 type="text"
@@ -49,7 +49,7 @@ export default function Data_entry() {
                 placeholder="Team 3 score"
             />
             <hr />
-            <h3 className='score_title text-center text-white my-3'>Team four</h3>
+            <h3 className='fw-bold score_title text-center text-white my-3'>Team four</h3>
             <Form.Control
                 className="w-50 mx-auto mt-4"
                 type="text"
