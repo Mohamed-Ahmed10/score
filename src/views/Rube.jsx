@@ -26,12 +26,13 @@ export default function Rube() {
             <h1>The VR Rube Goldberg</h1>
 
             <h1 className='text-white'>
-                <Badge bg="secondary">{ formatTime(time)}</Badge>
+                <Badge bg="secondary">{formatTime(time)}</Badge>
             </h1>
             <Button className="mx-3" onClick={() => handleStart(setIsRunning)} variant="primary">Start</Button>
             <Button className="mx-3" onClick={() => handlePause(setIsRunning)} variant="info">Pause</Button>
             <Button className="mx-3" onClick={() => reset(setTime, setIsRunning)} variant="success">Reset</Button>
-            <p className="text-white w-50 m-auto mt-4">The VR Rube Goldberg machine game in the change management course measures adaptability, problem-solving, and collaboration. Participants must adapt to changing conditions, creatively solve problems, and collaborate effectively to construct the machine, reflecting essential competencies for managing organizational change.</p>
+            <p className="text-white w-50 m-auto mt-4">في دورتك للتفكير الإبداعي، تحويل الكرات البولينغ إلى جبن وعناصر متنوعة يعزز التفكير الجانبي ويشجع على حل المشكلات غير التقليدية. بينما يتحدى المشاركون العقبات في البيئة، يمارسون القدرة على التكيف والابتكار، مما يعزز الإبداع تحت القيود. تقييم هذه النشاطات يقيم قدرة المشاركين على توليد أفكار جديدة، والتفكير بشكل نقدي حول استخدام الموارد، والتكيف مع التحديات غير المتوقعة، وهي كلها مهارات أساسية لتعزيز التفكير الإبداعي.
+                وهو يقيس العديد من صفات المبدعين التي تم مناقشتها في البرنامج و كيفية استخدامها في الحياه العمليه</p>
         </div>
     )
 }
