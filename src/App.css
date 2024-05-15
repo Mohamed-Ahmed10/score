@@ -1,13 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
 body {
     background: linear-gradient(#262626d9, #1c1c1c7a), url(/src/assets/bg1.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 * {
-    font-family: "Hanken Grotesk", sans-serif;
+    font-family: "Cairo", sans-serif;
     margin: 0;
 }
 

@@ -14,7 +14,7 @@ export default function SiteNav() {
                     <Nav className="mx-auto">
                         <NavLink className="nav-link" to="/tennis">Tennis</NavLink>
                         <NavLink className="nav-link" to="/climbing">Climbing</NavLink>
-                        <NavLink className="nav-link" to="/rube_goldberg">Rube goldberg</NavLink>
+                        <NavLink className="nav-link" to="/rube_goldberg">Bowling</NavLink>
                         <NavLink className="nav-link" to="/results">Results</NavLink>
                     </Nav>
                 </Navbar.Collapse>

@@ -23,7 +23,7 @@ export default function Rube() {
 
     return (
         <div className="text-center mt-4 pt-4">
-            <h1>The VR Rube Goldberg</h1>
+            <h1>The VR bowling</h1>
 
             <h1 className='text-white'>
                 <Badge bg="secondary">{formatTime(time)}</Badge>
